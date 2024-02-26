@@ -81,25 +81,7 @@ JWT (JSON Web Token) is used for authentication and authorization. Make sure to 
     * API Endpoints
        POST ( http://localhost:8085/triv/auth/users/signup ) :- Register a user.
        POST ( http://localhost:8085/triv/auth/users/signup ) :- Register a admin.
-    * RequestBody:- 
-         {
-            "firstName": "Sakshi",
-            "lastName": "Choudhary",
-            "contact": "9958090188",
-            "email": "sakshi@gmail.com",
-            "password": "12345",
-            "dateOfBirth": "2002-02-05",
-            "address": {
-                "addressLine1": "D/O Kavita Choudhary",
-                "addressLine2": "",
-                "buildingName": "Surya Appartment",
-                "landMark": "Ramind Showroom",
-                "city": "Noida",
-                "state": "UP",
-                "country": "Indian",
-                "pincode": "201301"
-            }
-        }
+    
 
   # Login 
      * API Endpoints
@@ -107,9 +89,4 @@ JWT (JSON Web Token) is used for authentication and authorization. Make sure to 
         GET ( http://localhost:8085/triv/auth/admins/signin ) :- Login to the Application as Admin
 
         ## Note -- 
-             Ensure that you choose Basic Authentication in the Authorization settings and provide the username and password used during registration. The system will respond with a JWT token in the Headers section, labeled as "Authorization." Please retain this JWT token as it will be necessary for subsequent requests.
-
-##   ER_Diagram                                            
-
-
-
+             Ensure that you choose Basic Authentication in the Authorization settings and provide the username and password used during registration. The system will respond with a JWT token in the Headers section, labeled as "Authorization." Please retain this JWT token as it will be necessary for subsequent requests.                                
